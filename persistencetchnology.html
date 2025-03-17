@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color:peachpuff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: royalblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        img {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Persistent
+    </h1>
+
+    <!--<marquee>
+        <img src="Persistent1.jpg" height="300" width="400">
+        <img src="Persistent2.jpg" height="300" width="400">
+        <img src="Persistent3.jpg" height="300" width="400">
+        <img src="Persistent4.jpg" height="300" width="400">
+        <img src="Persistent5.jpg" height="300" width="400">
+        <img src="Persistent6.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/Persistent1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/Persistent2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/Persistent3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/Persistent4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/Persistent5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/Persistent6.jpg" style="width:100%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+  <span class="dot"></span>  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+ Persistent System is an Indian multinational technology company specializing in software services and solutions. Key points:
+
+Services: Offers a range of IT services, including software development, digital transformation, and product engineering.Industries: Serves diverse industries like banking, healthcare, manufacturing, and technology.<br>
+Global Presence: Has a global footprint with offices and delivery centers worldwide.
+Technologies: Expertise in emerging technologies like AI, cloud computing, and blockchain.
+Partnerships: Collaborates with major technology partners to deliver comprehensive solutions.<br>
+Innovation:* Focuses on innovation through research labs, exploring cutting-edge technologies.<br>
+Agile Approach: Adopts agile methodologies for software development, ensuring flexibility and responsiveness.
+Custom Solutions: Develops tailored solutions to meet specific business needs.
+
+For the latest and more detailed information, it's recommended to check Persistent Systems' official website or recent news sources.
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+    
+
+</body>
+</html>
+
+

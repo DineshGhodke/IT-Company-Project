@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accenture</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ 
+
+    <h1>Accenture
+    </h1>
+
+    <!--<marquee>
+        <img src="image/Accenture1.jpg" height="300" width="400">
+        <img src="image/Accenture2.jpg" height="300" width="400">
+        <img src="image/Accenture3.jpg" height="300" width="400">
+        <img src="image/Accenture4.jpg" height="300" width="400">
+        <img src="image/Accenture5.jpg" height="300" width="400">
+        <img src="image/Accenture6.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/Accenture1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/Accenture2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/Accenture3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/Accenture4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/Accenture5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/Accenture6.jpg" style="width:100%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+  <span class="dot"></span>  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+
+Accenture is a global professional services company, providing a broad range of services in strategy, consulting, digital, technology, and operations. Headquartered in Dublin, Ireland, Accenture operates in more than 200 cities across 51 countries.<br>
+The company was founded in 1989 as Andersen Consulting and rebranded as Accenture in 2001. Accenture's focus areas include helping clients with digital transformation, technology innovation, and business strategy.<br>
+With a diverse workforce of over 624,000 employees, Accenture serves clients in various industries, including finance, healthcare, communications, and technology. The company collaborates with leading technology providers to deliver cutting-edge solutions.
+Accenture is known for its commitment to sustainability and corporate responsibility. It actively engages in initiatives to address environmental and social challenges, aiming to make a positive impact on communities and the planet.<br>
+Innovation is a key aspect of Accenture's approach, with continuous efforts to harness emerging technologies like artificial intelligence, blockchain, and cloud computing to drive business outcomes for clients.<br>
+Accenture Interactive, a subsidiary, focuses on creating engaging customer experiences through digital marketing, design, and commerce solutions.
+The company's extensive research and thought leadership contribute to shaping industry trends. Accenture publishes reports and studies that provide insights into the evolving business landscape.
+As of my last knowledge update in January 2022, please note that specific details about Accenture may have changed, and it's advisable to check the latest sources for the most up-to-date information.
+
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+    
+<audio controls  loop autoplay>
+    <source src="itsongmainpage.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
+
+

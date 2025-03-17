@@ -1,0 +1,108 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>L&T Infotech
+    </h1>
+
+    <!--<marquee>
+        <img src="l&t1.jpg" height="300" width="400">
+        <img src="l&t2.jpg" height="300" width="400">
+        <img src="l&t3.jpg" height="300" width="400">
+        <img src="l&t4.jpg" height="300" width="400">
+        <img src="l&t5.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/l&t1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/l&t2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/l&t3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/l&t4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/l&t5.jpg" style="width:100%">
+  
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+   
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+        L&T Infotech, now known as LTI (Larsen & Toubro Infotech), is an Indian multinational IT services and solutions company.
+
+L&T Infotech was founded in 1997 as the technology arm of Larsen & Toubro Limited, a prominent engineering and construction company in India.It is headquartered in Mumbai, Maharashtra, India, and has a global presence with offices in several countries.LTI offers a wide range of IT services, including software development, system integration, cloud computing, and cybersecurity.The company has a diverse client base across industries such as banking, financial services, insurance, manufacturing, and healthcare.<br>
+LTI is known for its focus on innovation and has established research and development centers to stay at the forefront of technology.The company has a strong commitment to sustainability and corporate social responsibility, engaging in various initiatives for community development.<br>
+L&T Infotech is listed on the Bombay Stock Exchange and the National Stock Exchange of India.
+As of my knowledge cutoff in January 2022, the company had over 35,000 employees globally.
+LTI has received numerous awards for its excellence in IT services and corporate governance.<br>
+The company's offerings include digital transformation, analytics, artificial intelligence, and Internet of Things (IoT) solutions.LTI has strategic partnerships with leading technology providers to enhance its service offerings and capabilities.It operates delivery centers and offices in North America, Europe, Asia-Pacific, and the Middle East.<br>LTI has been recognized for its workplace culture and is considered one of the top employers in the IT industry.The company's leadership team is focused on driving growth and ensuring customer satisfaction.
+LTI's financial performance reflects its stability and growth in the competitive IT services sector.
+The company places a strong emphasis on talent development and provides training programs for its employees.
+L&T Infotech has been involved in various digital initiatives, contributing to the digital transformation journey of its clients.The company continues to evolve in the dynamic IT landscape, adapting to emerging technologies and market trends.
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+   
+<P ALIGN=LEFT><A
+
+
+</body>
+</html>
+
+

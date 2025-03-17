@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wipro</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: peachpuff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: royalblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        img {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wipro
+    </h1>
+
+    <!--<marquee>
+        <img src="wipro1.jpg" height="300" width="400">
+        <img src="wipro2.jpg" height="300" width="400">
+        <img src="wipro3.jpg" height="300" width="400">
+        <img src="wipro4.jpg" height="300" width="400">
+        <img src="wipro5.jpg" height="300" width="400">
+        <img src="wipro6.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/wipro1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/wipro2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/wipro3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/wipro4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/wipro5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/wipro6.jpg" style="width:100%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+  <span class="dot"></span>  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+Wipro Limited, commonly known as Wipro, is an Indian multinational corporation providing information technology services, consulting, and business process outsourcing. Established in 1945, Wipro has grown to become a major player in the global IT industry, offering a wide range of solutions, including software development, cybersecurity, and digital transformation services.<br> The company is headquartered in Bangalore, India, and operates in various sectors such as finance, healthcare, and telecommunications. <br>Wipro is recognized for its commitment to sustainability and social responsibility, with initiatives focusing on environmental conservation and community development. As of my knowledge cutoff in January 2022, these details provide a concise overview of Wipro Technologies.Wipro has a significant global presence, with operations in over 50 countries, serving clients across diverse industries. <br>The company is known for its emphasis on innovation, investing in research and development to stay at the forefront of technological advancements. Wipro's comprehensive range of services includes consulting, application development, and infrastructure management. <br>With a focus on client satisfaction, Wipro tailors its solutions to address specific business challenges, fostering long-term partnerships. As a key player in India's IT landscape, Wipro continues to adapt to evolving market trends and technological shifts.
+
+
+
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+   
+
+</body>
+</html>
+
+

@@ -1,0 +1,102 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Infosys</h1>
+
+   <!--  <marquee>
+        <img src="infosys1.jpg" height="300" width="400">
+        <img src="infosys2.jpg" height="300" width="400">
+        <img src="infosys3.jpg" height="300" width="400">
+        <img src="infosys4.jpg" height="300" width="400">
+         <img src="infosys5.jpg" height="300" width="400">
+          <img src="infosys6.jpg" height="300" width="400">
+    </marquee>-->
+     <div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/infosys1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/infosys2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/infosys3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="image/numbertext">4 / 6</div>
+  <img src="image/infosys4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/infosys5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/infosys6.jpg" style="width:100%">
+  
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+   
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+        Infosys, headquartered in Bangalore, India, is a renowned global IT consulting and services firm founded in 1981. Led by CEO Salil Parekh, it specializes in software development, maintenance, and business process outsourcing.<br> Listed as INFY, Infosys is recognized for its expertise in AI, blockchain, and cloud computing. With a diverse workforce, the company has a strong global presence and offers IT consulting, application development, and infrastructure management.<br> Infosys prioritizes innovation, sustainability, and corporate social responsibility through initiatives like the Infosys Foundation. Ethical business practices and corporate governance are integral to its operations. <br>The company actively promotes diversity, inclusion, and employee development. Infosys adapts to industry trends, embracing digital transformation and agile methodologies. Its subsidiary, Finacle, focuses on banking and financial services solutions. Infosys faces challenges in a dynamic market but remains a key player, evolving to meet global business needs. For the latest, check recent updates on Infosys.
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+    
+
+</body>
+</html>
+
+

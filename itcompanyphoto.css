@@ -1,0 +1,39 @@
+header{
+	text-align: center;
+}
+
+main{
+	margin-left: 90px;
+}
+
+.box{
+	display:block;
+	float:left;
+	width: 30%;
+	padding: 10px;
+	padding-left: 12px;
+	overflow:hidden;
+}
+
+
+
+img{
+	
+	width:45%;
+  border-radius:10px;
+}
+
+img:hover{
+	transform: scale(1.5,1.5);
+	transition: .2s transform;
+}
+.bg{
+	background-color: black;
+	
+}
+h1{
+	color: white;
+    text-align: center;
+    padding:30px;
+}
+

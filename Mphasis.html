@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mphasis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: peachpuff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: royalblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        img {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mphasis
+    </h1>
+
+   <!-- <marquee>
+        <img src="Mphasis1.jpg" height="300" width="400">
+        <img src="Mphasis2.jpg" height="300" width="400">
+        <img src="Mphasis3.jpg" height="300" width="400">
+        <img src="Mphasis4.jpg" height="300" width="400">
+        <img src="Mphasis5.jpg" height="300" width="400">
+        <img src="Mphasis6.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/Mphasis1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/Mphasis2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/Mphasis3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/Mphasis4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/Mphasis5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/Mphasis6.jpg" style="width:100%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+  <span class="dot"></span>  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+Mphasis is an Indian multinational IT services and solutions provider headquartered in Bangalore. Established in 1996, the company operates globally, serving clients in various industries such as banking, financial services, and healthcare.<br>
+
+Specializing in cloud and cognitive technologies, Mphasis offers a broad spectrum of services including application development, infrastructure services, and business process outsourcing. The company's commitment to innovation is reflected in its emphasis on emerging technologies like artificial intelligence, blockchain, and automation.<br>
+
+Mphasis has a collaborative approach, often working closely with clients to co-create solutions tailored to their specific business needs. This customer-centric focus has contributed to building enduring relationships and fostering long-term partnerships.<br>
+
+Known for its diverse and inclusive workplace, Mphasis values sustainability and social responsibility, participating in initiatives that address environmental concerns and support community development.<br>
+
+The company's digital transformation solutions aim to enhance client competitiveness in the rapidly evolving technological landscape. Mphasis is part of the Blackstone Group, a leading global investment firm.<br>
+
+As of my last knowledge update in January 2022, please note that specific details about Mphasis may have changed, and it's advisable to check the latest sources for the most up-to-date information.
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+    
+
+</body>
+</html>
+
+

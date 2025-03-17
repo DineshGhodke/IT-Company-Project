@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCL</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>HCL
+    </h1>
+
+   <!-- <marquee>
+        <img src="HCL1.jpg" height="300" width="400">
+        <img src="HCL2.jpg" height="300" width="400">
+        <img src="HCL3.jpg" height="300" width="400">
+        <img src="HCL4.jpg" height="300" width="400">
+        <img src="HCL5.jpg" height="300" width="400">
+        <img src="HCL6.jpg" height="300" width="400">
+    </marquee>-->
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/HCL1.jpg" style="width:100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/HCL2.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/HCL3.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/HCL4.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/HCL5.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/HCL6.jpg" style="width:100%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+  <span class="dot"></span>  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <p>
+HCL Technologies is a global IT services and consulting company headquartered in Noida, India. Established in 1976, it has grown to become one of the leading players in the information technology industry.<br>
+
+HCL operates in various domains, including IT and business process outsourcing, infrastructure services, engineering and R&D, and digital solutions. The company serves clients in diverse industries such as financial services, healthcare, manufacturing, telecommunications, and more.<br>
+
+Known for its customer-centric approach, HCL emphasizes the "Relationship Beyond the Contract" philosophy, aiming to build long-term partnerships with clients. The company focuses on co-innovation and collaboration to address clients' business challenges.<br>
+
+HCL is recognized for its commitment to social responsibility and sustainability, engaging in initiatives that contribute to education, healthcare, and environmental conservation.<br>
+
+As of my last knowledge update in January 2022, specific details about HCL Technologies may have evolved, so it's advisable to check the latest sources for the most current information.
+
+    </p>
+
+    <p align="left"><a href="itcompany.html">GO TO HOME PAGE</a></p>
+    
+
+</body>
+</html>
+
+
